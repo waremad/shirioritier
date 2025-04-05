@@ -255,6 +255,11 @@ with open("out.txt",mode="w",encoding="utf-8") as f:
 
 words = zeroend(words)
 words = dictsort(words)
+
+for i in words:
+    if i[0] == "キ":
+        print(i)
+
 rankls = tierrank(5,words)
 #for i in list(words.keys()):
 #    prnit(i,words[i])
